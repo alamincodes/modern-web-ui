@@ -12,7 +12,7 @@ export const Navbar = ({ isMenuShown, setIsMenuShown }) => {
   return (
     <>
       {/* web nav */}
-      <div className="absolute w-full h-24 bg-black text-white z-20">
+      <div className=" w-full h-24 bg-black text-white z-20 fixed">
         <div className="flex justify-between items-center max-w-screen-xl mx-auto px-4 h-full">
           <div>
             <h1 className="text-thBlue text-3xl tracking-widest">ANTON</h1>
