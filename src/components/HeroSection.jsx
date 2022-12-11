@@ -15,7 +15,7 @@ const HeroSection = ({ isMenuShown }) => {
     setIsVideoPlaying(true);
   };
   return (
-    <div className="flex items-end justify-center w-full h-screen text-center ">
+    <div name="home" className="flex items-end justify-center w-full h-screen text-center ">
       <video
         ref={videoRef}
         src={heroVideo}
@@ -30,24 +30,25 @@ const HeroSection = ({ isMenuShown }) => {
           isVideoPlaying ? "" : "bg-black/80"
         } ${isMenuShown ? "opacity-50" : "opacity-100"}`}
       >
-        <h1 className="text-5xl lg:text-7xl">web 3.0 </h1>
-        <h1 className="text-5xl lg:text-7xl capitalize mb-12">
+        <h1 className="text-3xl lg:text-7xl font-bold">web 3.0 </h1>
+        <h1 className="text-2xl lg:text-7xl capitalize font-bold mb-12">
           The <span className="text-thBlue">Feature</span> is here
         </h1>
+        {/* button */}
         <div className="flex flex-row justify-center items-center ">
-          <GradientBtn title="get anton" className="capitalize" />
-          <GradientBtn title="get products" className="capitalize mx-12" />
+          <GradientBtn title="get anton" className="capitalize text-[10px] lg:text-lg" />
+          <GradientBtn title="get products" className="capitalize mx-2 text-[10px] lg:text-lg" />
           {isVideoPlaying ? (
             <FaPauseCircle
               onClick={handleVideoPause}
               className="text-thBlue duration-200 hover:scale-110 cursor-pointer"
-              size={30}
+              size={35}
             />
           ) : (
             <FaPlayCircle
               onClick={handleVideoPlay}
               className="text-thBlue duration-200 hover:scale-110 cursor-pointer"
-              size={30}
+              size={35}
             />
           )}
         </div>
