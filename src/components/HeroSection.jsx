@@ -35,7 +35,7 @@ const HeroSection = ({ isMenuShown }) => {
         } ${isMenuShown ? "opacity-50" : "opacity-100"}`}
       >
         <h1 className="text-5xl lg:text-7xl font-bold">
-          web <span className="text-thOrange">3.0</span>{" "}
+          Web <span className="text-thOrange">3.0</span>{" "}
         </h1>
         <h1 className="text-3xl lg:text-7xl capitalize font-bold mb-8">
           The <span className="text-thBlue">Feature</span> is here
