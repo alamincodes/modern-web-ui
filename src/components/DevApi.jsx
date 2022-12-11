@@ -12,16 +12,16 @@ const DevApi = () => {
         <div className="flex flex-col lg:flex-row justify-center items-center gap-8">
           {/* left */}
           <div className="flex flex-col gap-4 w-full lg:w-1/2 p-8 bg-gray-900 rounded-lg">
-            <p className="  text-[14px] text-left border-l-4 pl-4 odd:border-thOrange even:border-thBlue">
+            <p className="text-[14px]  lg:text-[18px]  text-left border-l-4 pl-4 odd:border-thOrange even:border-thBlue">
               Whom madam songs faster get as followed sought many leave.
             </p>
-            <p className=" text-[14px] text-left border-l-4 pl-4 odd:border-thOrange even:border-thBlue">
+            <p className="text-[14px] lg:text-[18px]  text-left border-l-4 pl-4 odd:border-thOrange even:border-thBlue">
               Whom madam songs faster get as followed sought many leave.
             </p>
-            <p className=" text-[14px] text-left border-l-4 pl-4 odd:border-thOrange even:border-thBlue">
+            <p className=" text-[14px]  lg:text-[18px] text-left border-l-4 pl-4 odd:border-thOrange even:border-thBlue">
               Whom madam songs faster get as followed sought many leave.
             </p>
-            <p className="  text-[14px] text-left border-l-4 pl-4 odd:border-thOrange even:border-thBlue">
+            <p className="  text-[14px]  lg:text-[18px] text-left border-l-4 pl-4 odd:border-thOrange even:border-thBlue">
               Whom madam songs faster get as followed sought many leave.
             </p>
           </div>
