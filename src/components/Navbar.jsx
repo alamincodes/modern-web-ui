@@ -31,7 +31,11 @@ export const Navbar = ({ isMenuShown, setIsMenuShown }) => {
       <div className="fixed w-full h-24 bg-black/80 backdrop-blur-2xl text-white z-20">
         <div className="flex justify-between items-center max-w-screen-xl mx-auto px-4 h-full">
           <div>
-            <h1 className="text-thBlue tracking-widest text-3xl font-bold">ANTON</h1>
+            <Link to="home" smooth duration={500}>
+              <h1 className="text-thBlue tracking-widest cursor-pointer text-3xl font-bold">
+                ANTON
+              </h1>
+            </Link>
           </div>
 
           <div className="hidden lg:flex items-center">
