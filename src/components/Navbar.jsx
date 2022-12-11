@@ -1,6 +1,6 @@
 import React from "react";
 import GradientBtn from "./GradientBtn";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { HiMenuAlt3, HiOutlinePlus } from "react-icons/hi";
 import { Link } from "react-scroll";
 export const Navbar = ({ isMenuShown, setIsMenuShown }) => {
   const links = [
@@ -54,19 +54,19 @@ export const Navbar = ({ isMenuShown, setIsMenuShown }) => {
             onClick={() => setIsMenuShown(!isMenuShown)}
             className="block lg:hidden cursor-pointer"
           >
-            {isMenuShown ? <FaTimes size={30} /> : <FaBars size={30} />}
+            {isMenuShown ? <HiOutlinePlus className=" rotate-45" size={30} /> : <HiMenuAlt3 size={30} />}
           </div>
         </div>
       </div>
 
       <div
-        className={`w-full bg-black text-white fixed z-10 left-0 h-fit py-12 lg:hidden flex justify-center text-center text-2xl duration-500 ${
-          isMenuShown ? "top-24 rounded-b-2xl opacity-95" : "top-[-100%]"
+        className={`w-full bg-black/80 backdrop-blur-2xl text-white fixed z-10 left-0 h-fit py-12 lg:hidden flex justify-center text-center text-2xl duration-500 ${
+          isMenuShown ? "top-24 opacity-95" : "top-[-100%]"
         }`}
       >
         <ul>
           {links.map(({ id, link }) => (
-            <li key={id} className="p-4 uppercase cursor-pointer text-sm">
+            <li key={id} className="p-4 uppercase cursor-pointer text-sm duration-300 hover:text-thBlue">
               <Link
                 onClick={() => setIsMenuShown(false)}
                 to={link}
