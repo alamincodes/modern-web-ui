@@ -29,7 +29,7 @@ const DevApi = () => {
           {/* right */}
 
           <div className="w-full lg:w-1/2 lg:rotate-6 hover:rotate-0 duration-300 ">
-            <img src={codeImage} alt="code" className="shadow-lg shadow-thBlue rounded-lg" />
+            <img src={codeImage} alt="code" className="shadow-lg hover:shadow-thPurple shadow-thBlue rounded-lg" />
           </div>
         </div>
       </PageSection>

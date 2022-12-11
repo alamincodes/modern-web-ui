@@ -31,7 +31,7 @@ export const Navbar = ({ isMenuShown, setIsMenuShown }) => {
       <div className="fixed w-full h-24 bg-black/80 backdrop-blur-2xl text-white z-20">
         <div className="flex justify-between items-center max-w-screen-xl mx-auto px-4 h-full">
           <div>
-            <h1 className="text-thBlue tracking-widest text-3xl">ANTON</h1>
+            <h1 className="text-thBlue tracking-widest text-3xl font-bold">ANTON</h1>
           </div>
 
           <div className="hidden lg:flex items-center">
@@ -47,14 +47,20 @@ export const Navbar = ({ isMenuShown, setIsMenuShown }) => {
                 </Link>
               ))}
             </ul>
-            <GradientBtn className="ml-4 capitalize" title="get anton" />
+            <Link to="developer API" smooth duration={500}>
+              <GradientBtn className="ml-4 capitalize" title="get anton" />
+            </Link>
           </div>
 
           <div
             onClick={() => setIsMenuShown(!isMenuShown)}
             className="block lg:hidden cursor-pointer"
           >
-            {isMenuShown ? <HiOutlinePlus className=" rotate-45" size={30} /> : <HiMenuAlt3 size={30} />}
+            {isMenuShown ? (
+              <HiOutlinePlus className=" rotate-45" size={30} />
+            ) : (
+              <HiMenuAlt3 size={30} />
+            )}
           </div>
         </div>
       </div>
@@ -66,7 +72,10 @@ export const Navbar = ({ isMenuShown, setIsMenuShown }) => {
       >
         <ul>
           {links.map(({ id, link }) => (
-            <li key={id} className="p-4 uppercase cursor-pointer text-sm duration-300 hover:text-thBlue">
+            <li
+              key={id}
+              className="p-4 uppercase cursor-pointer text-sm duration-300 hover:text-thBlue"
+            >
               <Link
                 onClick={() => setIsMenuShown(false)}
                 to={link}

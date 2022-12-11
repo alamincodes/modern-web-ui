@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import heroVideo from "../assets/heroVideo.mp4";
 import { FaPauseCircle, FaPlayCircle } from "react-icons/fa";
 import GradientBtn from "./GradientBtn";
+import { Link } from "react-scroll";
 
 const HeroSection = ({ isMenuShown }) => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(true);
@@ -15,7 +16,10 @@ const HeroSection = ({ isMenuShown }) => {
     setIsVideoPlaying(true);
   };
   return (
-    <div name="home" className="flex items-end justify-center w-full h-screen text-center ">
+    <div
+      name="home"
+      className="flex items-end justify-center w-full h-screen text-center "
+    >
       <video
         ref={videoRef}
         src={heroVideo}
@@ -36,8 +40,18 @@ const HeroSection = ({ isMenuShown }) => {
         </h1>
         {/* button */}
         <div className="flex flex-row justify-center items-center ">
-          <GradientBtn title="get anton" className="capitalize text-[10px] lg:text-lg" />
-          <GradientBtn title="get products" className="capitalize mx-2 text-[10px] lg:text-lg" />
+          <Link to="developer API" smooth duration={500}>
+            <GradientBtn
+              title="get anton"
+              className="capitalize text-[10px] lg:text-lg"
+            />
+          </Link>
+          <Link to="products" smooth duration={500}>
+            <GradientBtn
+              title="get products"
+              className="capitalize mx-2 text-[10px] lg:text-lg"
+            />
+          </Link>
           {isVideoPlaying ? (
             <FaPauseCircle
               onClick={handleVideoPause}
