@@ -34,8 +34,10 @@ const HeroSection = ({ isMenuShown }) => {
           isVideoPlaying ? "" : "bg-black/80"
         } ${isMenuShown ? "opacity-50" : "opacity-100"}`}
       >
-        <h1 className="text-3xl lg:text-7xl font-bold">web 3.0 </h1>
-        <h1 className="text-2xl lg:text-7xl capitalize font-bold mb-12">
+        <h1 className="text-5xl lg:text-7xl font-bold">
+          web <span className="text-thOrange">3.0</span>{" "}
+        </h1>
+        <h1 className="text-3xl lg:text-7xl capitalize font-bold mb-8">
           The <span className="text-thBlue">Feature</span> is here
         </h1>
         {/* button */}
@@ -43,13 +45,13 @@ const HeroSection = ({ isMenuShown }) => {
           <Link to="developer API" smooth duration={500}>
             <GradientBtn
               title="get anton"
-              className="capitalize text-[10px] lg:text-lg"
+              className="capitalize text-sm lg:text-lg"
             />
           </Link>
           <Link to="products" smooth duration={500}>
             <GradientBtn
               title="get products"
-              className="capitalize mx-2 text-[10px] lg:text-lg"
+              className="capitalize mx-2 text-sm lg:text-lg"
             />
           </Link>
           {isVideoPlaying ? (
